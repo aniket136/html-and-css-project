@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* +++++++++++header++++++++++ */
+header {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links .nav-link {
+  font-size: 2rem;
+  text-transform: capitalize;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-links .nav-link.active {
+  color: #db143c;
+}
+
+.nav-links .nav-link:hover:not(.active) {
+  color: #dc143c;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.6rem 3rem;
+  font-size: 1.6rem;
+  background-color: black;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+}
+
+.pri-btn {
+  background-color: #83f8d1;
+  color: black;
+  font-size: 1.8rem;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.pri-btn:hover {
+  background-color: #1efdb3;
+}
+
+#banner {
+  height: 84vh;
+  background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-01.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  max-width: 550px;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+/* .featured */
+#featured {
+  min-height: 100vh;
+  padding: 8rem 1rem;
+}
+
+.row {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.featured-card-left {
+  width: 20%;
+}
+
+.featured-card-left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.featured-card-center {
+  width: 50%;
+  min-width: 400px;
+  padding: 20px;
+}
+
+.featured-card-right {
+  width: 25%;
+  min-width: 280px;
+  overflow: hidden;
+}
+
+.featured-card-center>h4 {
+  color: #dc143c;
+  font-size: 2rem;
+}
+
+.featured-card-center>h2 {
+  font-size: 4rem;
+  max-width: 250px;
+}
+
+.center-content h5 {
+  color: #dc143c;
+  font-size: 2rem;
+}
+
+.center-content p {
+  font-size: 1.6rem;
+}
+
+.featured-dec {
+  display: flex;
+  gap: 20px;
+  padding: 2rem;
+  margin-bottom: 5px;
+}
+
+.featured-dec-right h4 {
+  font-size: 2rem;
+}
+
+.featured-dec-right p {
+  font-size: 1.8rem;
+  color: #8b8585;
+}
+
+/* Properties */
+
+.Properties-cards {
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Properties-card {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.Properties-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Properties-card .decription {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-block: 1.5rem;
+  justify-content: space-between;
+}
+
+.Properties-card .decription button {
+  padding: 8px 1.5rem;
+  background-color: pink;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.Properties-card .decription p {
+  color: #f7b12f;
+  font-size: 2rem;
+}
+
+.Properties-card .add {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: left;
+}
+
+.more-details {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.sec-btn {
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+
+.sec-btn:hover {
+
+  background-color: #db143c;
+  color: #fff;
+}
+
+/* Contact */
+#Contact-page {
+  min-height: 100vh;
+  padding: 0 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  padding: 3rem;
+  width: 60vw;
+  backdrop-filter: blur(50px);
+  background-color: #0c0c0c4b;
+}
+
+form .input-box {
+  width: 100%;
+}
+
+.input-box label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.input-box input {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-box textarea {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #111;
+  padding: 30px 0;
+}
+
+@media (max-width:768px) {
+  .nav-links .nav-link {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .featured-card-left,
+  .featured-card-center,
+  .featured-card-right {
+    width: 100%;
+  }
+
+  .featured-card-left {
+    order: 2;
+  }
+
+  .featured-card-center {
+    order: 1;
+  }
+
+  .featured-card-right {
+    order: 3;
+  }
+
+  .featured-card-left img {
+    height: 400px;
+
+    object-fit: cover;
+  }
+
+  .Properties-cards {
+    padding: 1rem 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:520px) {
+  .Properties-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact {
+    width: 100%;
+    backdrop-filter: blur(-50px);
+    background-color: #0c0c0c4b;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:420px) {
+  html {
+    font-size: 8px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
