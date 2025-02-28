@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="main">
+  <div class="wrapper">
+    <header>
+      <div class="nav-part1">
+        <h4 class="logo">Medisense</h4>
+      </div>
+      <div class="nav-part2">
+        <ul class="nav-links">
+          <li class="active">Doctors</li>
+          <li>Hosptal</li>
+          <li>Blog</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div class="nav-part3">
+        <button class="btn">Sign in</button>
+        <button class="btn btn-primary">Appointmeent</button>
+      </div>
+    </header>
+    <!-- +++++hero banner+++ -->
+    <div class="hero-banner">
+      <div class="hero-banner-content">
+        <p>WELCOME TO BARRY MEDICAL SERVICIS</p>
+        <h1>Medicine μο <br> and Clinic Center</h1>
+        <p class="hero-info">We make sure you have a fine distance with the sickness. We make you never lose hope.</p>
+        <button class="btn download-btn">Download Our App</button>
+      </div>
+    </div>
+    <!-- ++++++++++ treatment+++++++++ -->
+    <section class="treatment-section">
+      <div class="title">
+        <h1>Quick Solution For Better Treatment</h1>
+      </div>
+      <div class="treatment-cards">
+        <div class="treatment-card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+          <h4>Fine Best Doctor</h4>
+          <p>We Always Provide The Best Warranty For You</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="treatment-card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+          <h4>Make An Appointment</h4>
+          <p>Shedule With Your Favorite Doctor Anytime</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="treatment-card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+          <h4>Solved The Problem</h4>
+          <p>Shedule With Your Favorite Doctor Anytime</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!-- ++++about++++++ -->
+    <section class="about">
+      <div class="left">
+        <img
+          src="images-removebg-preview (1).png"
+          alt="about-image">
+      </div>
+      <div class="right">
+        <div class="right-content">
+          <h3>Why Choose Barry</h3>
+          <h1>Consultation With <br> Our Best Doctors</h1>
+        </div>
+        <div class="right-card">
+          <div class="right-card-col1">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+          <div class="right-card-col2">
+            <h4>More experience</h4>
+            <p>Choose from many options including free courses and university degrees</p>
+          </div>
+        </div>
+        <div class="right-card">
+          <div class="right-card-col1">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+          <div class="right-card-col2">
+            <h4>More experience</h4>
+            <p>Choose from many options including free courses and university degrees</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Consultation-section -->
+    <section class="Consultation-section ">
+      <div class="right">
+        <div class="right-content">
+          <h3>Online Doctor Consultation</h3>
+          <h1>Make An Appointment For Online Consultation</h1>
+          <p>We make sure you have a fine distance with the sickness. We make you never lose hope.</p>
+          <button class="btn appointment-btn">Make An Apointment</button>
+        </div>
+      </div>
+      <div class="left">
+        <img src="doctor-removebg-preview.png" alt="">
+      </div>
+    </section>
+    <!-- ++++++++doctor section++++ -->
+    <section class="doctor-page">
+      <div class="title">
+        <h1>Meet Our Best Doctor</h1>
+        <p>We make sure you have a fine distance with the sickness. We make you never lose hope.</p>
+      </div>
+      <div class="doctor-cards">
+        <div class="doctor-card">
+          <div class="image-container">
+            <img   src="doctor-removebg-preview.png"
+              alt="card-img">
+          </div>
+          <h4>Cap. Dr. Sukitti Panpunnung</h4>
+          <div class="doctor-card-info">
+            <h5>Specialist</h5>
+            <p>Cardiology (Heart)</p>
+            <p>Internal Medicine</p>
+          </div>
+          <button class="card-btn">VIEW PROFILE</button>
+          <button class="card-btn book-btn">BOOK TODAY</button>
+        </div>
+        <div class="doctor-card">
+          <div class="image-container">
+            <img
+              src="images-removebg-preview (1).png"
+              alt="card-img2">
+          </div>
+          <h4>Dr. Sirichai Niramarnsakul</h4>
+          <div class="doctor-card-info">
+            <h5>Specialist</h5>
+            <p>Cardiology (Heart)</p>
+            <p>Internal Medicine</p>
+          </div>
+          <button class="card-btn">VIEW PROFILE</button>
+          <button class="card-btn book-btn">BOOK TODAY</button>
+        </div>
+        <div class="doctor-card">
+          <div class="image-container">
+            <img src="doctor-removebg-preview.png" alt="">
+          </div>
+          <h4>Dr. Oraporn Sitburana</h4>
+          <div class="doctor-card-info">
+            <h5>Specialist</h5>
+            <p>Neurology (Nerve)</p>
+            <p>Internal Medicine</p>
+          </div>
+          <button class="card-btn">VIEW PROFILE</button>
+          <button class="card-btn book-btn">BOOK TODAY</button>
+        </div>
+      </div>
+    </section>
+    <!-- ++++footer+++= -->
+    <footer>
+      <div class="footer-content">
+        <h4>Accommodation</h4>
+        <ul>
+          <li>Hospitals</li>
+          <li>Bed & Breakfast</li>
+        </ul>
+        <h4>Customer Support</h4>
+        <ul>
+          <li>Hospital</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Blog</li>
+          <li>Apointment</li>
+          <li>Booking Guarantee</li>
+          <li>Best Service Awards</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h4>About Us</h4>
+        <ul>
+          <li>Besnik Hospital Group</li>
+          <li>Hospital Sign Up</li>
+          <li>Affiliate Program</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h5 class="footer-logo">Medisense</h5>
+        <h4>Follow us on</h4>
+        <div class="social-icon">
+        </div>
+      </div>
+    </footer>
+   <div> <p class="CopyRight">CopyRight2024@Medisense. All Right Reserved</p></div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+    
+  </script>
+</body>
+
+</html>
